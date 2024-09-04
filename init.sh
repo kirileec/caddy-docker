@@ -7,5 +7,4 @@ else
     echo "Apply DNS: ""$DNS"
     echo "$DNS" | sed 's/"//g' | grep -Eo "[^,]+" | grep -Eo "$IPREX4" | sed "s/^/nameserver /g" >/etc/resolv.conf
 fi
-sed 's/\r$//' /data/caddyfile.txt >/tmp/caddyfile
-caddy run --config /tmp/caddyfile --adapter caddyfile
+caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
