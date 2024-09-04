@@ -1,6 +1,6 @@
 # caddy-docker with dns providers
-`docker pull sliamb/caddy`  
-![pull](https://img.shields.io/docker/pulls/sliamb/caddy.svg) ![size](https://img.shields.io/docker/image-size/sliamb/caddy)   
+`docker pull slk1133/caddy`  
+![pull](https://img.shields.io/docker/pulls/slk1133/caddy.svg) ![size](https://img.shields.io/docker/image-size/slk1133/caddy)   
 ![Docker Platforms](https://img.shields.io/badge/platforms-linux%2F386%20%7C%20linux%2Famd64%20%7C%20linux%2Farm%2Fv6%20%7C%20linux%2Farm%2Fv7%20%7C%20linux%2Farm64%2Fv8%20-blue)  
 一个caddy的docker镜像，集成编译`dns providers`插件，Actions自动编译更新。  
 包括以下插件：
@@ -17,7 +17,7 @@
 --with github.com/caddy-dns/route53
 ```
 有其他需要加的插件可以提。  
-caddyfile配置文件：`/data/caddyfile.txt`，建议映射/data目录。  
+caddyfile配置文件：`/etc/caddy/Caddyfile`，建议映射/data目录。  
 可用环境变量  
 ```shell
 # 设置时区
