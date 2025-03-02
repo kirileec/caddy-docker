@@ -15,6 +15,7 @@
 --with github.com/caddy-dns/namecheap
 --with github.com/caddy-dns/dynv6
 --with github.com/caddy-dns/route53
+--with github.com/ysicing/caddy2-geocn
 ```
 有其他需要加的插件可以提。  
 caddyfile配置文件：`/etc/caddy/Caddyfile`，建议映射/data目录。  
